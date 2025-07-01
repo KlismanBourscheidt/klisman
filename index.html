@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klisman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="nomeNote"> <!-- Nome -->
+        <div class="container" id="nome">
+            <h1>Klisman Gabriel Bourscheidt</h1>
+        </div>
+    </section>
+    
+    <section id="biografia"> <!-- Biografia -->
+        <div class="container" id="bioDiv">
+            <div>
+                <p>Me chamo Klisman, tenho 25 anos, resido na cidade de Curitiba que fica no estado do Paraná e atualmente estou em busca da minha primeira oportunidade de estágio na área da programação!</p>
+            </div>
+            <div id="divChat">
+                <img src="Assets/biografia/chat.svg" alt="Balão de texto!">
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies"><!--Hobbies-->
+        <div class="containerMaior">
+
+            <div>
+                <h1>Hobbies</h1>
+            </div>
+
+            <ul id="list">
+                <li class="hobby-item" data-video="Assets/videos/video1.mp4">
+                <p>Futebol</p>
+                <div class="media-thumb" style="background-image: url('Assets/hobbies/cr7.svg');"></div>
+            </li>
+
+            <li class="hobby-item" data-video="Assets/videos/video2.mp4">
+                <p>Volêi</p>
+                <div class="media-thumb" style="background-image: url('Assets/hobbies/volei.svg');"></div>
+            </li>
+
+            <li class="hobby-item" data-video="Assets/videos/video3.mp4">
+                <p>Futebol Americano</p>
+                <div class="media-thumb" style="background-image: url('Assets/hobbies/futebolAmericano.svg');"></div>
+            </li>
+            </ul>
+        </div>
+
+        <div id="video-modal" class="hidden">
+            <div class="overlay"></div>
+            <video id="modal-video" controls autoplay></video>
+        </div>
+    </section>
+
+    <section id="paises"><!--Países-->
+        <div id="fundo">
+            <h2>Países que eu gostaria de visitar</h2>
+        </div>
+        <div>
+            <table>
+                <th>
+                    <td class="border">
+                         <h2>Bandeiras</h2>
+                    </td>
+                    <td>
+                        <h2>Países</h2>
+                    </td>
+                </th>
+                </tr>
+                <tr id="croacia"><!--Croacia-->
+                    <th>
+                        <td class="border">
+                            <img src="Assets/paises/croacia.svg" alt="Bandeira da croacia">
+                        </td>
+                        <td>
+                            <p>Cróacia</p>
+                        </td>
+                    </th>
+                </tr>
+
+                <tr id="france"><!--França-->
+                    <th>
+                        <td class="border">
+                            <img src="Assets/paises/france.svg" alt="Bandeira da França">
+                        </td>
+                        <td>
+                            <p>França</p>
+                        </td>
+                    </th>
+                </tr>
+
+                <tr id="japan"> <!--Japão-->
+                    <th>
+                        <td class="border">
+                            <img src="Assets/paises/japao.svg" alt="Bandeira do Japão">
+                        </td>
+                        <td>
+                            <p>Japão</p>
+                        </td>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        
+    </section>
+
+    <section id="sites" class="container"><!--Sites-->
+        <div>
+            <h2>Sites que gosto de acompanhar</h2>
+        </div>
+        <nav>
+            <a href="https://www.youtube.com/watch?v=TyskcLbCkqE&ab_channel=ONEMedia" target="_blank">Youtube</a>
+            <a href="https://www.transfermarkt.com.br/" target="_blank">Futebol</a>
+            <a href="https://www.w3schools.com/" target="_blank">Assistente</a>
+        </nav>
+    </section>
+
+    <section id="mensagem" class="container">
+        <button id="btnMensagem">Clique para mostrar mensagem</button>
+        <div id="audio">
+
+        </div>
+    </section>
+
+    <script src="Controller/sobreMouse.js"></script>
+    <script src="Controller/video.js"></script>
+    <script src="Controller/button.js"></script>
+</body>
+</html>
