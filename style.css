@@ -1,12 +1,8 @@
 /*Definições gerais*/
-*{
- 
-    font-family: 'Inter';
-}
-
 body{
     background-image: url(Assets/background/backgroud.svg);
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
 }
 
 section{
